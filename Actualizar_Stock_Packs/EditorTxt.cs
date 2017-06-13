@@ -96,6 +96,8 @@ namespace Actualizar_Stock_Packs
 			}
 			if (!ok)
 				sendErrorEmail();
+			
+			reader.Close();
 		}
 		
 		public void leerArchivoStock(string rutaArchivoStocks)
@@ -110,13 +112,14 @@ namespace Actualizar_Stock_Packs
 				
 			}
 			reader.Close();
+			reader=null;
 			
 		}
 		
 		public void grabarStocks(string rutaArchivoStocks)
 		{
 
-			StreamWriter writer = new StreamWriter(@"MERnuevo.txt");
+			StreamWriter writer = new StreamWriter(@rutaArchivoStocks);
 			//Crea el nuevo archivo en el disco C
 			StringBuilder aux = new StringBuilder();
 			bool esPack = false;
