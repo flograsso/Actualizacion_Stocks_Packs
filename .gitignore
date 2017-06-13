@@ -12,6 +12,10 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+.exe
+.pdb
+
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -92,7 +96,8 @@ ipch/
 *.vsp
 *.vspx
 *.sap
-
+/bin
+/obj
 # TFS 2012 Local Workspace
 $tf/
 
