@@ -8,10 +8,10 @@
       <Value Profile="(Default)">log-1</Value>
     </Setting>
     <Setting Name="rutaArchivoPacks" Type="System.String" Scope="User" Roaming="false">
-      <Value Profile="(Default)">C:\Users\SoporteSEM\Desktop\Parsimoption\Parsimoption\Actualizar_Stock_Packs\bin\Debug\packs.txt</Value>
+      <Value Profile="(Default)">C:\Users\Federico\Desktop\Packs.txt</Value>
     </Setting>
     <Setting Name="rutaArchivoStock" Type="System.String" Scope="User" Roaming="false">
-      <Value Profile="(Default)">C:\Users\SoporteSEM\Desktop\Parsimoption\Parsimoption\Actualizar_Stock_Packs\bin\Debug\MER.txt</Value>
+      <Value Profile="(Default)">C:\Users\Federico\Desktop\MER.txt</Value>
     </Setting>
   </Settings>
 </SettingsFile>

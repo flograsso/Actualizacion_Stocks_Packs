@@ -12,7 +12,7 @@ namespace Actualizar_Stock_Packs {
 	
 	
 	[global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("ICSharpCode.SettingsEditor.SettingsCodeGeneratorTool", "5.1.0.5216")]
+	[global::System.CodeDom.Compiler.GeneratedCodeAttribute("ICSharpCode.SettingsEditor.SettingsCodeGeneratorTool", "4.4.1.9729")]
 	internal sealed partial class Settings1 : global::System.Configuration.ApplicationSettingsBase {
 		
 		private static Settings1 defaultInstance = ((Settings1)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings1())));
@@ -37,8 +37,7 @@ namespace Actualizar_Stock_Packs {
 		
 		[global::System.Configuration.UserScopedSettingAttribute()]
 		[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-		[global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\SoporteSEM\\Desktop\\Parsimoption\\Parsimoption\\Actualizar_Stock_Packs\\bin\\" +
-			"Debug\\packs.txt")]
+		[global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Federico\\Desktop\\Packs.txt")]
 		public string rutaArchivoPacks {
 			get {
 				return ((string)(this["rutaArchivoPacks"]));
@@ -50,8 +49,7 @@ namespace Actualizar_Stock_Packs {
 		
 		[global::System.Configuration.UserScopedSettingAttribute()]
 		[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-		[global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\SoporteSEM\\Desktop\\Parsimoption\\Parsimoption\\Actualizar_Stock_Packs\\bin\\" +
-			"Debug\\MER.txt")]
+		[global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Federico\\Desktop\\MER.txt")]
 		public string rutaArchivoStock {
 			get {
 				return ((string)(this["rutaArchivoStock"]));

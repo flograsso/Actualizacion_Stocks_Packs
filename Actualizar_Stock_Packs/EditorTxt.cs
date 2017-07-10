@@ -36,18 +36,20 @@ namespace Actualizar_Stock_Packs
 			public int sku_pack;
 			public int cant_pack;
 			public int stock_pack;
+			public int margen_pack;
 			
-			public Pack (long sku_lamp, int sku_pack, int cant_pack)
+			public Pack (long sku_lamp, int cant_pack, int sku_pack,int margen_pack)
 			{
 				this.sku_lamp=sku_lamp;
 				this.sku_pack=sku_pack;
 				this.cant_pack=cant_pack;
 				this.stock_pack=0;
+				this.margen_pack=margen_pack;
 			}
 			
 			public override string ToString()
 			{
-				return string.Format("[Pack Sku_lamp={0}, Sku_pack={1}, Cant_pack={2}, Stock_pack={3}]", sku_lamp, sku_pack, cant_pack, stock_pack);
+				return string.Format("[Pack Sku_lamp={0}, Sku_pack={1}, Cant_pack={2}, Stock_pack={3}, Margen_pack={4}", sku_lamp, sku_pack, cant_pack, stock_pack,margen_pack);
 			}
 
 			
@@ -67,7 +69,7 @@ namespace Actualizar_Stock_Packs
 			while ((line = reader.ReadLine()) != null)
 			{
 				string[] words = line.Split(';');
-				listaPacks.Add(new Pack(Int64.Parse(words[0]),Int32.Parse(words[2]),Int32.Parse(words[1])));
+				listaPacks.Add(new Pack(Int64.Parse(words[0]),Int32.Parse(words[1]),Int32.Parse(words[2]),Int32.Parse(words[3])));
 
 			}
 			reader.Close();
@@ -198,8 +200,8 @@ namespace Actualizar_Stock_Packs
 						
 						stockLamp=Int32.Parse(auxString);
 						
-						packaux = new Pack(listaPacks[x].sku_lamp,listaPacks[x].sku_pack,listaPacks[x].cant_pack);
-						packaux.stock_pack=(int)(Math.Round((decimal)stockLamp/listaPacks[x].cant_pack,0)-RESTA_PACKS);
+						packaux = new Pack(listaPacks[x].sku_lamp,listaPacks[x].cant_pack,listaPacks[x].sku_pack,listaPacks[x].margen_pack);
+						packaux.stock_pack=(int)(Math.Round((decimal)stockLamp/listaPacks[x].cant_pack,0)-listaPacks[x].margen_pack);
 						if (packaux.stock_pack<0)
 						{
 							packaux.stock_pack=0;
