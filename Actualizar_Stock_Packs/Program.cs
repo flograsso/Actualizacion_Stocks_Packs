@@ -11,6 +11,13 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
+
+
+
+/*
+ *	Desde Settings1 se puede cambiar la ubicacion de los archivos txt. Luego de modificarla, hay que ir al settings1.designer y actualizar
+ *  el namespace 
+ */
 namespace Actualizar_Stock_Packs
 {
 	class Program
