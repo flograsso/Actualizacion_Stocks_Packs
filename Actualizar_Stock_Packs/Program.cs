@@ -42,7 +42,9 @@ namespace Actualizar_Stock_Packs
 			}
 			catch (Exception e)
 			{
+				editorTxt.sendErrorEmail();
 				editorTxt.logger.logData("ERROR: "+e);
+				
 			}
 			
 			
